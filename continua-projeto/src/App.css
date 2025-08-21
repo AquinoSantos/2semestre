@@ -1,0 +1,106 @@
+.App {
+  
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #b80000;
+ 
+ 
+  
+}
+
+h1 {
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 2.5em;  
+  background-color: #82df10;
+  
+  
+
+  
+}
+
+h2 {
+  color: #202020;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #0fff07;
+  text-align: center;
+  
+}
+h3 {
+  color: #000000;
+  margin-top: 500px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding: 10px;
+  background: linear-gradient(to right, #309b10, #1310e4);
+  text-align: center;
+  
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  width: 800px;
+  margin-inline-start: 500px;
+  margin-top: 20px;
+  
+}
+
+button {
+  background-color: #ff1100;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+ 
+  
+}
+
+button:hover {
+  background-color: #1dcf3b;
+  
+}
+
+hr {
+  border: 1px solid #2c01e7;
+  margin: 20px 0;
+  width: 80%;
+  
+}
+
+ol {
+  list-style-type: decimal;
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(to right, #309b10, #26f8f8);
+  text-transform: uppercase;
+  text-align: left;
+
+  
+  
+  
+}
+
+ol li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+ol li:last-child {
+  border-bottom: none;
+}
