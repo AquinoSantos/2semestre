@@ -1,15 +1,19 @@
 import './App.css';
 import React, { useState } from 'react';
+import logo from '../src/assets/images/logo_compras.png';
+import AdicionarProduto from './components/AdicionarProduto';
+import ListaDeProdutos from './components/ListadeProdutos';
+
 
 function App()  {
   
-  const [produto, setproduto] = useState('');
+  
+  const [produtos, setprodutos] = useState(['Mouse', 'Teclado', 'Monitor']);
 
   
-  const [produtos, setprodutos] = useState(['Maça','Uva','Feijão']);
+  const adicionarUsuario = (nome) => {
 
-  
-  const adicionarproduto = () => {
+    const produto = nome.trim();
 
     
     if (produtos.includes(produto)) {
@@ -17,38 +21,28 @@ function App()  {
 
       return;
 
-    } else if (produto.trim() === '') {
-      alert('Produto não encontrado');
-      return;
+    } 
 
-
-    }  
+      
     
    
 
    
     setprodutos([...produtos, produto]);
-    setproduto('');
   };
 
 
   return (
 
-    <div >
-      <h1>Lista de Compras Digital</h1>
+    <div classname="App" >
+      <img src={logo} className="logo" alt="Logo compras" />
+      <h1>Lista de Produtos Digital</h1>
+      <AdicionarProduto onAdd={adicionarUsuario} />
       
-      <input 
-        type="text" 
-        value={produto} 
-        onChange={(e) => setproduto(e.target.value)} 
-        placeholder="Digite o produto que deseja adicionar a lista"
-      />
+      
 
-
-
-      <button onClick={adicionarproduto}>Adicionar</button>
     
-      
+  
       <hr />
       <h2>Lista de Produtos</h2>
       <ol>
