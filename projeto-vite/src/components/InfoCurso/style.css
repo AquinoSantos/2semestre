@@ -1,0 +1,20 @@
+/* src\components\InfoCurso\style.css */
+
+
+
+.InfoCurso h2 {
+  border: 1px solid #2424ac;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #080885;
+  
+}
+.InfoCurso p {
+  font-size: 18px;
+  color: #0c0c57;
+  margin: 8px 0;
+}
+
+

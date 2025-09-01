@@ -1,0 +1,18 @@
+/* src\components\Mensagem\style.css */
+
+
+
+
+.h2 {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+.h1 {
+  font-size: 18px;
+  color: #c71919;
+  margin: 8px 0;
+}
