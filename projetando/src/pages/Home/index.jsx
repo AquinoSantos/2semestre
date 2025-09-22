@@ -2,6 +2,8 @@
 
 import { Link } from 'react-router-dom'
 import './style.css'
+import hero from '../../assets/hero.png'
+import office from '../../assets/office.jpg'
 
 function Home() {  
     return (
@@ -9,7 +11,7 @@ function Home() {
             <section className='hero'>
                 <div className='hero__text'>
                     <h1>Contabilidade descomplicada para seu negócio</h1>
-                    <p>Econnomize tempo e foque no que importa. Cuidamos da sua folha, impostos e obrigações com tecnologia e atendimento humano.</p>
+                    <p>Economize tempo e foque no que importa. Cuidamos da sua folha, impostos e obrigações com tecnologia e atendimento humano.</p>
                     <div className='hero__cta'>
                         <Link to="/servicos" className='btn primary'>Conheça nossos Serviços</Link>
                         <Link to='/fale-conosco' className='btn'>Fale com um especialista</Link>
